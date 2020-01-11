@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "*": ["types/*"],
+      "@cps/*": [
+        "components/*"
+      ],
+      "@redux/*": [
+        "redux/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@css/*": [
+        "assets/css/*"
+      ],
+      "@images/*": [
+        "assets/images/*"
+      ],
+      "@api/*": [
+        "api/*"
+      ],
+      "@common/*": [
+        "common/*"
+      ],
+      "@typings/*": [
+        "typings/*"
+      ]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": true,
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "noImplicitAny": false
+  },
+  "include": [
+    "src"
+  ]
+}
