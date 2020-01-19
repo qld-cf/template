@@ -5,8 +5,9 @@
 
 > 拓展
 
-[x] 新增react-router
-[x] 新增lazy懒加载
+- [x] 新增react-router
+- [x] 新增lazy懒加载
+- [ ] 待定
 
 好用请给颗✨✨✨✨
 > react： 16.12.0
