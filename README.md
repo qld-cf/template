@@ -28,6 +28,49 @@ $ npm i @typescript-eslint/eslint-plugin --save-dev
 // @typescript-eslint/parser 和 @typescript-eslint/eslint-plugin的版本必须保持一致
 ```
 
+- vscode setting.json 设置
+
+```
+  "eslint.options": {
+    "extensions": [".ts", ".tsx", ".js"],
+    "plugins": [
+      "html"
+    ]
+  },
+  "eslint.codeActionsOnSave": true, //  启用保存时自动修复,默认只支持.js文件
+  "tslint.autoFixOnSave": true, //  启用保存时自动修复,默认只支持ts文件
+  "eslint.validate": [
+    "javascript", //  用eslint的规则检测js文件
+    "javascriptreact",
+    "typescript",
+    "html",
+    // "vue",
+    {
+      "language": "vue", // 检测vue文件
+      // "autoFix": true //  为vue文件开启保存自动修复的功能
+    },
+    {
+      "language": "tsx", // 检测tsx文件
+      "autoFix": true //  为vue文件开启保存自动修复的功能
+    },
+    {
+      // "language": "html",
+      // "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    },
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+```
+
 - 配置规则插件 | 修改.eslintrc.js
 ```
 module.exports = {
