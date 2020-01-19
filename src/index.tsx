@@ -21,8 +21,8 @@ if ((!isPrd && !isComputerBrower) || isDebug) {
 const store = isPrd ? (
   createStore(rootReducer, applyMiddleware(thunk))
 ) : (
-  window.__REDUX_DEVTOOLS_EXTENSION__ ? (
-    createStore(rootReducer, compose(applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__()))
+  window.__REDUX_DEVTOOLS_EXTENSION__ ? ( // 使用redux-devtools-extension进行开发调试
+    createStore(rootReducer, compose(applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__())) // compose: 多函数组装成型函数 把复杂的多函数嵌套调用，组合成纯粹的函数调用，实现fn1(fn2(fn3(fn3(...args))))-->compose(fn1,fn2,fn3,fn4)(...args)这样单纯可读的函数调用方式
   ) : (
     createStore(rootReducer, applyMiddleware(thunk))
   )
