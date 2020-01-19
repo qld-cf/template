@@ -2,6 +2,11 @@
 
 
 新增： [前端整理](https://github.com/qld-cf/FrontInterview)
+
+> 拓展
+[x] 新增react-router
+[x] 新增lazy懒加载
+
 好用请给颗✨✨✨✨
 > react： 16.12.0
 
