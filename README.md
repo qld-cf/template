@@ -1,5 +1,9 @@
+##### 此项目整合了最新的webpack4，eslint约束，引入ts模板，直接down下来高效且规范地开发自己的react项目
+
+
 新增： [前端整理](https://github.com/qld-cf/FrontInterview)
 好用请给颗✨✨✨✨
+> react： 16.12.0
 
 > 运行和打包
 
