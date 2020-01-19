@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import '@css/index.scss';
-import '@common/config'; // 全局配置
+import '../src/common/config'; // 全局配置
 import rootReducer from '@redux/rootReducer';
 import App from './App';
 import { getEnv, getPlatform } from '@utils/utils';
+import { Route, HashRouter as Router, Switch, Redirect } from 'react-router-dom';
+const Home = React.lazy(() => import('@cps/index'));
 
 const { isDebug, isPrd } = getEnv();
 const { isComputerBrower } = getPlatform();
@@ -29,9 +31,17 @@ const store = isPrd ? (
 );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
+  <Suspense fallback={null}>
+    <Provider store={store}>
+      {/*  如果不使用路由 : <App /> */}
+      <Router>
+        <Switch>
+          <Route exact path='/' render={() => <Redirect to='/home' />} />
+          <Route path='/home' render={(props) => <Home {...props} />} />
+        </Switch>
+      </Router>
+    </Provider>
+  </Suspense>
   ,
   document.getElementById('root')
 );

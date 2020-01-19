@@ -28,10 +28,13 @@
         "api/*"
       ],
       "@common/*": [
-        "common/*"
+        "components/common/*"
       ],
       "@typings/*": [
         "typings/*"
+      ],
+      "@config/*": [
+        "config/*"
       ]
     },
     "allowJs": true,

@@ -146,9 +146,7 @@ module.exports = function (webpackEnv) {
     bail: isEnvProduction,
     // 打包去除map文件, 参考readme.md
     devtool: isEnvProduction
-      ? shouldUseSourceMap
-        ? 'source-map'
-        : false
+      ? false
       : isEnvDevelopment && 'cheap-module-source-map',
     // These are the "entry points" to our application.
     // This means they will be the "root" imports that are included in JS bundle.
@@ -313,9 +311,10 @@ module.exports = function (webpackEnv) {
         '@utils': resolvePath('/src/utils'),
         '@css': resolvePath('/src/assets/css'),
         '@images': resolvePath('/src/assets/images'),
-        '@common': resolvePath('/src/common'),
+        '@common': resolvePath('/src/components/common'),
         '@api': resolvePath('/src/api'),
         '@typings': resolvePath('/src/typings'),
+        '@config': resolvePath('/src/config'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
