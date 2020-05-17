@@ -1,5 +1,5 @@
 
-# this repository is for react + ts
+# this project is for react + ts
 > run ang pack
 
 ```
