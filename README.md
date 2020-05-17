@@ -3,7 +3,9 @@
 
 [前端总结](https://github.com/qld-cf/FrontThink)
 
-[react模板2.0](https://github.com/qld-cf/react-ts2)
+[react+ts 模板2.0](https://github.com/qld-cf/react-ts2)
+
+[electron + react + umi +ant 模板1.0](https://github.com/qld-cf/electron-react-tpl)
 
 
 > 运行和打包
