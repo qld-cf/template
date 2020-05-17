@@ -1,5 +1,3 @@
-##### 整合了最新的webpack4，eslint约束，引入typescript等
-
 
 [前端总结](https://github.com/qld-cf/FrontThink)
 
