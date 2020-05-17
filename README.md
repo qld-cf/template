@@ -15,7 +15,7 @@ $ npm run analyze // analyze bundle
 
 [react + ts 2.0](https://github.com/qld-cf/react-ts2)
 
-[electron + react + umi +ant 1.0](https://github.com/qld-cf/electron-react-tpl)
+[electron + react + umi +ant 4.0](https://github.com/qld-cf/electron-react-tpl)
 
 # frontend summary
 
