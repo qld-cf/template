@@ -1,27 +1,7 @@
+[react + ts](https://github.com/qld-cf/react-web-tpl)
 
-# this project is for react + ts
-> run ang pack
+[electron + react + umi](https://github.com/qld-cf/electron-react-tpl)
 
-```
-$ npm i
-$ npm start
-$ npm run build
-$ npm run analyze // analyze bundle
-```
+[koa2 + mysql](https://github.com/qld-cf/koa2-app)
 
-
-# here is more template
-
-
-[react + ts 2.0](https://github.com/qld-cf/react-ts2)
-
-[electron + react + umi +ant](https://github.com/qld-cf/electron-react-tpl)
-
-# frontend summary
-
-[前端总结](https://github.com/qld-cf/FrontThink)
-
-
-
-
-
+[koa2 + websocket](https://github.com/qld-cf/koa2-websocket)
