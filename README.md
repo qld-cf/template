@@ -4,6 +4,6 @@
 
 [koa2 + mysql](https://github.com/qld-cf/koa2-app)
 
-[koa2 + websocket](https://github.com/qld-cf/koa2-websocket)
+[koa2-simple-server](https://github.com/qld-cf/koa2-simple-server)
 
 [基于dumi+father-build的react组件库开发和文档模板](https://github.com/qld-cf/dumi-tpl)
