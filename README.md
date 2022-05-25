@@ -1,6 +1,8 @@
 ## 一些前后端 项目模板
 
-[react + ts](https://github.com/qld-cf/react-web-tpl)
+[cra-react + ts](https://github.com/qld-cf/react-web-tpl)
+
+[react-app-rewired + ts](https://github.com/qld-cf/pure-react-app-rewired-tpl)
 
 [electron + react + umi](https://github.com/qld-cf/electron-react-tpl)
 
